@@ -1,0 +1,166 @@
+body
+{
+	background-color: #dddddd;
+	padding: 0px;
+	margin: 0px;
+}
+@font-face
+{
+	font-family: Roboto-Black;
+	src: url(fonts/Roboto-Black.ttf);
+}
+@font-face
+{
+	font-family: Roboto-BoldItalic;
+	src: url(fonts/Roboto-BoldItalic.ttf);
+}
+@font-face
+{
+	font-family: Roboto-Light;
+	src: url(fonts/Roboto-Light.ttf);
+}
+@font-face
+{
+	font-family: Roboto-Regular;
+	src: url(fonts/Roboto-Regular.ttf);
+}
+#sidebar
+{
+	width: 250px;
+	height: 100vh;
+	background-color: #30303D;
+	margin: 0px;
+	overflow: auto;
+}
+#searchBar
+{
+	width: 250px;
+	height: 50px;
+	background-color: #50505D;
+}
+#underSearch
+{
+	overflow: auto;
+	height: calc(100vh - 50px);
+}
+#underSearch ul
+{
+	list-style: none;
+	padding: 16px 10px 16px 10px;
+	margin: 0px;
+	font-family: arial;
+	font-size: 13px;
+	color: white;
+	border-bottom: 2px solid #CFCFCF;
+}
+#underSearch h4
+{
+	color: white;
+	font-size: 16px;
+	text-align: center;
+	font-family: arial;
+	font-weight: 600;
+}
+#scroll
+{
+	width: calc(100vw - 250px);
+	height: 100vh;
+	overflow: auto;
+	position: fixed;
+	display: block;
+	top: 0px;
+	left: 250px;
+}
+#newNumber
+{
+	margin: 0px;
+	background-color: #cdcdcd;
+	font-family: arial;
+	max-height: 0px;
+	overflow: hidden;
+	transition: max-height 0.7s ease;
+	transition-delay: 0s;
+}
+#newNumber table
+{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#newButtons
+{
+	text-align: center;
+}
+#searchBox
+{
+	background-color: #60606D;
+	margin-top: 9px;
+	margin-left: 9px;
+	padding: 7.5px;
+	border: none;
+	border-bottom: solid 2px #d9d9d9;
+	color: white;
+	box-shadow: none;
+	outline-style: none;
+	width: 125px
+}
+#searchBox.focus,#searchBox:focus
+{
+	border-bottom: solid 2px #797979;
+}
+#searchButton
+{
+	height: 20px;
+	background-color: #40404D;
+	vertical-align: middle;
+	padding-top: 6px;
+	padding-bottom: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#plusButton
+{
+	height: 20px;
+	background-color: #40404D;
+	vertical-align: middle;
+	padding-top: 6px;
+	padding-bottom: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: 8px;
+}
+#searchButton, #plusButton
+{ 
+	cursor: pointer; 
+	cursor: hand;
+}
+#headline
+{
+	font-family: Roboto-Black;
+	font-weight: 800;
+	text-align: center;
+	margin-bottom: 40px;
+}
+#numberList
+{
+	font-family: sans-serif;
+	font-size: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#numberList td,#numberList th
+{
+	padding-right: 150px;
+}
+th
+{
+	font-family: Roboto-Regular;
+	font-size: 18px;
+	text-align: center;
+}
+td
+{
+	font-family: Roboto-Light;
+	font-size: 18px;
+}

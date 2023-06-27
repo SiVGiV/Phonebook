@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Siv's Phonebook</title>
+	<link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+<body>
+	<div id="sidebar">
+		<div id="searchBar">
+			<input type="text" name="searchBox" id="searchBox" placeholder="Search..."/><img src="search.png" type="img/png" id="searchButton" onclick="findName()"/><img src="plus.png" type="img/png" id="plusButton" onclick="toggleAddNum()" />
+		</div>
+		<div id="underSearch">
+			
+		</div>
+	</div>
+	<div id="scroll">
+		<div id="newNumber">
+			<table>
+				<tr>
+					<td>First Name:</td><td><input type="text" name="firstName" id="firstName"/></td><td>Last Name:</td><td><input type="text" name="lastName" id="lastName"/></td>
+				</tr>
+				<tr>
+					<td>Phone Number:</td><td colspan="4"><input type="tel" name="telNum" id="telNum" style="width: 435px;"/></td>
+				</tr>
+				<tr>
+					<td>Email Address:</td><td colspan="4"><input type="email" name="email" id="email" style="width: 435px;"/></td>
+				</tr>
+				<tr id="newButtons">
+					<td colspan="4"><input type="button" name="submit" value="Submit" id="submit" onclick="submitContact()"/><input type="button" name="clear" id="clear" value="Clear" onclick="clearText()"/></td>
+				</tr>
+			</table>
+		</div>
+		<div id="numberListContainer">
+			<h1 id="headline">Phonebook</h1>
+			<table id="numberList">
+				<tr id="tableTitles">
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Phone Number</th>
+					<th>Email Address</th>
+				</tr>
+			</table>
+		</div>
+	</div>
+<script type="text/javascript" src="Scripts.js"></script>	
+</body>
+</html>
